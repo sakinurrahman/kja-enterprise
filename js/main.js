@@ -8,7 +8,7 @@ $('.top-carousel').owlCarousel({
     margin:0,
 	items:1,
 	nav:false,
-	autoplay:false,
+	autoplay:true,
 	dots:false,
 	autoplayTimeout:3000,
 	animateOut: 'fadeOut',

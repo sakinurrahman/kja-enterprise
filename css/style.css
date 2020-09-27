@@ -144,6 +144,9 @@ label {
 	font-size: 14px;
 	font-weight: 400;
 }
+.text-red {
+	color: red;
+}
 *::-moz-selection {
 	background: #d6b161;
 	color: #fff;
@@ -301,7 +304,6 @@ label {
 
 .active-menu a {
 	color: red;
-	text-transform: uppercase;
 }
 .menu-list {
 	border: 1.5px solid gray;
@@ -375,13 +377,11 @@ label {
 	bottom: 19%;
 	left: 5%;
 }
-
-
 .hero-slider-content h1 {
 	color: #fff !important;
-	font-family: titillium-bold;
-	font-size: 40px;
+	font-size: 46px;
 	margin-bottom: 0px;
+	font-weight: bold;
 }
 .hero-slider-content span {
 	display: block;
@@ -562,13 +562,14 @@ label {
 	margin: 0px;
 	font-weight: 300;
 }
-
 .featured-section .product-img {
 	max-width: 125px;
 	margin: 0 auto;
 	margin-bottom: 20px;
+	max-height: 90px;
+	min-height: 90px;
+	overflow: hidden;
 }
-
 .featured-section .product-price {
 	display: block;
 	font-family: Nayala;
@@ -784,3 +785,227 @@ label {
   }
 
 /*========x======== Contact Us =========x=========*/
+
+/*================ Single Products css =======================*/
+.meta-details {
+	text-align: center;
+	border: 2px solid gainsboro;
+	padding: 8px 0 16px 0px;
+	max-width: 400px;
+	margin: 0 auto;
+}
+.meta-details .product-title h2 {
+	font-size: 37px;
+	margin-bottom: 0;
+	line-height: 37px;
+  }
+  .meta-details .product-code {
+	font-family: poppins;
+	font-size: 19px;
+	margin-top: 4px;
+  }
+  .meta-details .product-code span {
+	font-family: nayala;
+	font-weight: 600;
+	font-size: 21px;
+	color: red;
+	border-bottom: 1.5px solid red;
+  }
+  .meta-details .product-photo {
+	max-width: 235px;
+	padding: 16px 0;
+	margin: 0 auto;
+  }
+
+  .color-plate h4 {
+	color: red;
+	font-size: 30px;
+	font-weight: 900;
+	margin-bottom: 10px;
+  }
+  .color-plate span {
+	font-size: 16px;
+	line-height: 20px;
+	font-family: poppins;
+	font-weight: bold;
+  }
+  .product-setup-charge {
+	margin-top: 30px;
+	margin-bottom: 24px;
+  }
+  .product-setup-charge h4 {
+	color: red;
+	font-weight: bold;
+	font-size: 30px;
+	margin-bottom: 10px;
+  }
+  .product-setup-charge span {
+	font-weight: bold;
+	line-height: 22px;
+	font-size: 17px;
+	font-family: poppins;
+  }
+  .meta-details .product-btn {
+	font-size: 18px;
+	font-weight: 900;
+	font-family: poppins-bold;
+	border: 2px solid black;
+	padding: 12px 12px 12px 12px;
+}
+
+.meta-details .product-btn:focus {
+	color: #fff;
+	background-color: orange !important;
+	outline: 0px !important;
+	box-shadow: none !important;
+	border: 2px solid rgb(136, 136, 136);
+}
+.price-break h4 {
+	color: red;
+	font-weight: bold;
+	font-size: 30px;
+	margin-bottom: 10px;
+  }
+  .price-break span {
+	font-size: 16px;
+	line-height: 25px;
+	font-weight: bold;
+	font-family: poppins;
+  }
+  
+.product-details {
+	margin-top: 75px;
+  }
+  .product-details h4 {
+	font-size: 30px;
+	color: red;
+	font-weight: bold;
+	text-transform: capitalize;
+  }
+  .product-size h5 {
+	font-size: 18px;
+	color: #102694;
+	font-family: poppins-bold;
+	margin-bottom: 0px;
+  }
+  .product-size span {
+	font-size: 21px;
+	font-weight: bold;
+	display: block;
+	line-height: 21px;
+	margin-bottom: 12px;
+  }
+  .product-aria h5 {
+	font-size: 18px;
+	color: #102694;
+	font-family: poppins-bold;
+	margin-bottom: 0px;
+  }
+  .product-aria span {
+	font-size: 21px;
+	font-weight: bold;
+	display: block;
+	line-height: 21px;
+	margin-bottom: 12px;
+  }
+  .product-option span {
+	font-size: 21px;
+	font-weight: bold;
+	display: block;
+	line-height: 22px;
+	margin-bottom: 12px;
+  }
+  .product-option h5 {
+	font-size: 18px;
+	color: #102694;
+	font-family: poppins-bold;
+	margin-bottom: 0px;
+  }
+
+  .about-product .title h3 {
+	font-size: 34px;
+	font-family: poppins;
+	font-weight: bold;
+	margin-bottom: 18px;
+  }
+  .about-product {
+	max-width: 900px;
+  }
+  
+.about-product p {
+	font-size: 17px;
+	font-weight: bold;
+	font-size: f;
+	font-family: poppins;
+  }
+
+  /* Suggestion products css */
+.suggest-product {
+	border: 1.5px solid gray;
+	padding: 12px 12px;
+	text-align: center;
+}
+.suggest-product .product-img {
+	max-width: 125px;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 20px;
+	max-height: 95px;
+	overflow: hidden;
+	min-height: 95px;
+}
+.suggest-product .product-content h5 {
+	font-size: 19px;
+	font-family: Nayala;
+	margin: 0px;
+	font-weight: 300;
+}
+.suggest-product .product-price {
+	display: block;
+	font-family: Nayala;
+	line-height: 23px;
+	font-size: 17px;
+}
+.suggest-product .origin {
+	display: block;
+	font-family: Nayala;
+	font-size: 17px;
+	margin-bottom: 15px;
+	text-transform: capitalize;
+}
+/*========x======== Single Products css =========x=========*/
+
+.shop-page .category-list ul li {
+	color: black;
+	font-family: poppins;
+	font-size: 23px;
+	margin-bottom: 14px;
+	padding-bottom: 10px;
+	display: block;
+	position: relative;
+  }
+  .shop-page .category-list ul li::after {
+	position: absolute;
+	content: "";
+	bottom: 0;
+	left: 0;
+	width: 200px;
+	height: 1.2px;
+	background: black;
+  }
+  .banner-section {
+	background: #FE5937;
+	padding: 10px 10px 10px 10px;
+}
+.banner-img {
+	max-width: 135px;
+}
+.banner-description {
+	max-width: 450px;
+}
+.banner-description h3 {
+	line-height: 27px;
+	font-family: poppins-bold;
+	font-size: 24px;
+	color: #FFD251;
+}

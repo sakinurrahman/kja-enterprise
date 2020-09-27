@@ -1,0 +1,56 @@
+  /* font family: poppins */
+  @font-face {
+    font-family: Poppins-bold ;
+    src: url(../google-fonts/Poppins-SemiBold.ttf);
+}
+
+  /* font family: poppins */
+  @font-face {
+    font-family: Poppins ;
+    src: url(../google-fonts/Poppins-Regular.ttf);
+}
+
+  /* font family: josefen */
+  @font-face {
+    font-family: Josefin ;
+    src: url(../google-fonts/JosefinSans-Regular.ttf);
+}
+
+  /* font family: josefen */
+  @font-face {
+    font-family: Josefin-medium ;
+    src: url(../google-fonts/JosefinSans-Medium.ttf);
+}
+
+
+  /* font family: josefen */
+  @font-face {
+    font-family: Josefin-bold ;
+    src: url(../google-fonts/JosefinSans-SemiBold.ttf);
+}
+
+
+  /* font family: tituliam */
+  @font-face {
+    font-family: titillium-bold ;
+    src: url(../google-fonts/TitilliumWeb-Bold.ttf);
+}
+
+  /* font family: tituliam */
+  @font-face {
+    font-family: titillium ;
+    src: url(../google-fonts/TitilliumWeb-Regular.ttf);
+}
+
+
+  /* font family: tituliam */
+  @font-face {
+    font-family: titillium-medium ;
+    src: url(../google-fonts/TitilliumWeb-SemiBold.ttf);
+}
+
+  /* font family: tituliam */
+  @font-face {
+    font-family: Nayala ;
+    src: url(../google-fonts/nyala.ttf);
+}

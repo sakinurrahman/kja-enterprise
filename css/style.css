@@ -333,7 +333,7 @@ label {
 }
 
 .hero-slide-one {
-	background: url(../img/hero-slider/pexels-paul-loh-233698.jpg);
+	background: url(../img/pexels-paul-loh-233698.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -342,7 +342,7 @@ label {
 	position: relative;
 }
 .hero-slide-two {
-	background: url(../img/hero-slider/pexels-aleksandar-pasaric-325185.jpg);
+	background: url(../img/hero-slider2.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -351,7 +351,7 @@ label {
 	position: relative;
 }
 .hero-slide-three {
-	background: url(../img/hero-slider/pexels-philipp-birmes-830891.jpg);
+	background: url(../img/hero-slider3.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -983,6 +983,12 @@ label {
 	padding-bottom: 10px;
 	display: block;
 	position: relative;
+	cursor: pointer;
+	transition: .3s all ease-in-out;
+}
+
+.shop-page .category-list ul li:hover {
+	color: red;
   }
   .shop-page .category-list ul li::after {
 	position: absolute;
@@ -995,7 +1001,7 @@ label {
   }
   .banner-section {
 	background: #FE5937;
-	padding: 10px 10px 10px 10px;
+	padding: 50px 10px 50px 10px;
 }
 .banner-img {
 	max-width: 135px;
@@ -1004,8 +1010,89 @@ label {
 	max-width: 450px;
 }
 .banner-description h3 {
-	line-height: 27px;
+	line-height: 25px;
 	font-family: poppins-bold;
-	font-size: 24px;
-	color: #FFD251;
+	font-size: 23px;
+	color: #FFEC6B;
+}
+.banner-description h5 {
+	color: #fff;
+	line-height: 17px;
+	margin-top: 10px;
+	font-family: poppins;
+	font-weight: 500;
+	font-size: 15px;
+}
+.banner-description p {
+	line-height: 16px;
+	color: #fff;
+	font-weight: bold;
+	font-family: poppins;
+	font-size: 14px;
+}
+.shop-page-pagination .page-link {
+	position: relative;
+	display: block;
+	color: black;
+	background-color: #fff;
+	border: 2px solid black;
+	font-size: 30px;
+	line-height: 30px;
+	margin-right: 11px;
+	font-family: nayala;
+	min-width: 50px;
+	height: 50px;
+}
+.shop-page-pagination .page-link i {
+	font-size: 22px;
+}
+.shop-page-pagination .active-page {
+	background: orange !important;
+	color: #fff !important;
+}
+
+.shop-page-product {
+	border: 1.5px solid gray;
+	padding: 12px 12px 22px 12px;
+  }
+  .shop-page-product h3 {
+	font-size: 23px;
+	font-family: Nayala;
+	margin: 0px;
+	font-weight: 600;
+  }
+  .shop-product-img {
+	max-width: 135px;
+	margin: 0 auto;
+	margin-bottom: 0px;
+	text-align: center;
+	margin-bottom: 10px;
+	max-height: 95px;
+	overflow: hidden;
+	min-height: 95px;
+	margin-top: 6px;
+}
+.shop-product-code {
+	font-size: 18px;
+	text-transform: capitalize;
+	line-height: 19px;
+}
+.shop-product-code span {
+	color: red;
+	border-bottom: 1px solid red;
+}
+.shop-product-size span {
+	color: red;
+	border-bottom: 1px solid red;
+}
+.shop-product-size {
+	font-size: 18px;
+	text-transform: capitalize;
+	line-height: 19px;
+}
+.categories-bar {
+	display: none;
+}
+.mobile-category-list {
+	display: none;
 }

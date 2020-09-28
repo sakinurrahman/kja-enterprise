@@ -9,7 +9,7 @@
 
 
 /* Normal desktop :992px. */
-@media (max-width: 991px) {
+@media (max-width: 992px) {
     .text-logo a {
         font-size: 20px;
         font-weight: bold;
@@ -23,6 +23,9 @@
     }
     .top-contact-us span {
         font-size: 15px;
+    }
+    .mobile-menu-bar {
+        display: block !important;
     }
     .menu-list {
         border: 1.5px solid gray;
@@ -83,9 +86,69 @@
         height: 265px;
     }
 
+  /* Shop page mobile category */
+  .mobile-category-list ul li {
+	color: black;
+	text-align: center;
+	font-family: poppins;
+	font-size: 21px;
+	margin-bottom: 0px;
+	padding-bottom: 5px;
+	display: block;
+	position: relative;
+	cursor: pointer;
+	transition: .3s all ease-in-out;
+}
+    .mobile-category-list ul li:hover {
+        color: red;
+      }
+      .mobile-category-list {
+        position: absolute;
+        top: 0;
+        left: -300px;
+        width: 300px;
+        background: #dfdfdf;
+        padding: 35px 0 10px 0px;
+        height: 100vh;
+        transition: .3s all ease-in-out;
+        -webkit-transition: .3s all ease-in-out;
+        -moz-transition: .3s all ease-in-out;
+        -ms-transition: .3s all ease-in-out;
+        -o-transition: .3s all ease-in-out;
+        display: block;
+}
+
+    .mobile-category-list.show-category {
+        left: 0px;
+        z-index: 1111;
+    }
 
 }
 
+@media (max-width:992px){
+    .categories-bar {
+        position: absolute;
+        top: 200px;
+        width: 40px;
+        height: 40px;
+        background: orange;
+        border-radius: 11%;
+        text-align: center;
+        color: #fff;
+        font-size: 21px;
+        line-height: 47px;
+        cursor: pointer;
+        display: block;
+    }
+    .close-btn {
+        position: absolute;
+        top: 7px;
+        right: 16px;
+        font-size: 35px;
+        color: orange;
+        cursor: pointer;
+    }
+}
  
 /* Tablet desktop :768px. */
 @media (max-width: 767px) {
@@ -147,6 +210,16 @@
     }
     .google-map {
         width: 100%;
+    }
+
+    .banner-section {
+        background: #FE5937;
+        padding: 35px 20px 35px 20px;
+        text-align: center;
+    }
+    .banner-description p {
+        margin-bottom: 24px !important;
+        margin-top: 15px !important;
     }
 
 }

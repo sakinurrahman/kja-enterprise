@@ -939,6 +939,9 @@ label {
 	font-family: poppins;
   }
 
+  .single-product-banner .banner-description {
+	max-width: 722px;
+}
   /* Suggestion products css */
 .suggest-product {
 	border: 1.5px solid gray;

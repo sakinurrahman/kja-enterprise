@@ -71,40 +71,23 @@ $('.featured-carousel').owlCarousel({
     }
 })
 
-
+//Navigation Menu JS
 $('#navbar').click(function() {
 	$('.menu-list').toggleClass('active');
 });
-// /* magnificPopup img view */
-// $('.popup-image').magnificPopup({
-// 	type: 'image',
-// 	gallery: {
-// 	  enabled: true
-// 	}
-// });
 
-// /* magnificPopup video view */
-// $('.popup-video').magnificPopup({
-// 	type: 'iframe'
-// });
+//Category menu js
+$('#show-btn').click(function() {
+	$('.mobile-category-list').addClass('show-category');
+});
+//Remove class
+$('#btn-close').click(function() {
+    $('.mobile-category-list').removeClass('show-category');
+});
 
 
-
-
-// // scrollToTop
-// $.scrollUp({
-// 	scrollName: 'scrollUp', // Element ID
-// 	topDistance: '300', // Distance from top before showing element (px)
-// 	topSpeed: 300, // Speed back to top (ms)
-// 	animation: 'fade', // Fade, slide, none
-// 	animationInSpeed: 200, // Animation in speed (ms)
-// 	animationOutSpeed: 200, // Animation out speed (ms)
-// 	scrollText: '<i class="icofont icofont-long-arrow-up"></i>', // Text for element
-// 	activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
-// });
-
-// // WOW active
-// new WOW().init();
+// WOW active
+new WOW().init();
 
 
 })(jQuery);

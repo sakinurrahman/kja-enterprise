@@ -76,6 +76,10 @@ $('#navbar').click(function() {
 	$('.menu-list').toggleClass('active');
 });
 
+$('#navbar-close').click(function() {
+	$('.menu-list').removeClass('active');
+});
+
 //Category menu js
 $('#show-btn').click(function() {
 	$('.mobile-category-list').addClass('show-category');

@@ -278,7 +278,6 @@ label {
 }
 
 .navbar {
-	border: 1.6px solid black;
 	padding: 0px !important;
 }
 
@@ -289,17 +288,36 @@ label {
 	color: #fff !important;
 	padding-top: 0;
 	padding-bottom: 0;
-	font-size: 31px;
-	margin-right: 3px;
+	font-size: 29px;
+	margin-right: 6px;
 	font-family: Nayala;
 	font-weight: 500;
 }
+.navbar-nav .nav-item {
+	transition: .3s all ease-in-out;
+	-webkit-transition: .3s all ease-in-out;
+	-moz-transition: .3s all ease-in-out;
+	-ms-transition: .3s all ease-in-out;
+	-o-transition: .3s all ease-in-out;
+}
+.navbar-nav .nav-item:hover {
+	background: #f5f5f54f;
+}
 
+
+  .show .nav-item .nav-link {
+	color: orange !important;
+  }
 .nav-icon {
 	font-size: 17px;
 	margin-left: -4px;
 	color: #fff;
-  }
+	transition: .3s all ease-in-out;
+	-webkit-transition: .3s all ease-in-out;
+	-moz-transition: .3s all ease-in-out;
+	-ms-transition: .3s all ease-in-out;
+	-o-transition: .3s all ease-in-out;
+}
   .show .nav-icon {
 	color: orange;
   }
@@ -312,9 +330,9 @@ label {
 	z-index: 999;
 	padding: 16px 10px 50px 10px;
 	border-radius: 0px !important;
-	border: none;
 	background-color: #F7F7F7;
-	box-shadow: 0px 16px 15px -17px #111;
+	box-shadow: 0 0 10px #dfdfdf;
+	border: 1px solid rgb(161, 160, 160);
 }
 
 .mega-aria h5 {
@@ -636,7 +654,7 @@ label {
 }
 /*=======X===== Featured products css ========X======*/
 
-/* Corporate gift css */
+/*============ Corporate gift css ==============*/
 .gift-title h2 {
 	line-height: 39px;
 	font-size: 42px;
@@ -649,12 +667,100 @@ label {
 	display: block;
 	font-family: poppins-bold;
 }
+/*=======X===== Corporate gift css =========X=====*/
 
+/*============ Trust badge section ==============*/
+.trust-badge-section {
+	background: #eceaeb;
+}
+.trust-badge-inner {
+	padding: 25px 0px;
+	margin: 0;
+}
+
+.trust-badge-section .trust-badge-box::after {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 3px;
+	top: 0;
+	right: 0;
+	background-image: linear-gradient(#d31144 33%,rgba(255,255,255,0) 0%);
+	background-position: right;
+	background-size: 2px 6px;
+	background-repeat: repeat-y;
+}
+
+.trust-badge-section .trust-badge-box:last-child::after{
+	display: none;
+}
+
+.trust-badge-inner img {
+	margin-right: 10px;
+	min-width: 40px;
+	height: 50px;
+	width: auto;
+}
+.trust-badge-label {
+	display: flex;
+	flex-flow: column wrap;
+	text-transform: uppercase;
+	font-family: nayala;
+	color: #261c02;
+	text-align: center;
+	font-weight: 900;
+	line-height: 1;
+}
+
+.trust-badge-label .large-label {
+	font-size: 30px;
+}
+
+.trust-badge-label  .small-label {
+	font-size: 19px;
+}
+
+.trust-badge-section .trust-badge-box {
+	position: relative;
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.reviews-section {
+	background: #5d5c5c;
+	padding: 25px 0;
+}
+
+
+.reviews-section .reviews-stars {
+	margin-left: 10px;
+}
+
+.reviews-logo, .reviews-stars {
+	height: auto;
+	width: 150px;
+}
+
+.reviews-message p {
+	font-size: 20px;
+	color: #fff;
+	font-family: poppins;
+	line-height: 35px;
+}
+.reviews-message p span {
+	font-weight: 900;
+	font-size: 21px;
+}
+
+/*======x====== Trust badge section =======x=======*/
 /* Footer css */
 .footer-section {
 	background: #312F30;
 	padding-top: 30px;
 	color: #fff !important;
+	margin-top: 0px !important;
 }
 
 .social-icon ul li {
@@ -1004,9 +1110,6 @@ label {
 	font-family: poppins;
   }
 
-  .single-product-banner .banner-description {
-	max-width: 722px;
-}
   /* Suggestion products css */
 .suggest-product {
 	border: 1.5px solid gray;
@@ -1067,37 +1170,6 @@ label {
 	height: 1.2px;
 	background: black;
   }
-  .banner-section {
-	background: #FE5937;
-	padding: 50px 10px 50px 10px;
-}
-.banner-img {
-	max-width: 135px;
-}
-.banner-description {
-	max-width: 450px;
-}
-.banner-description h3 {
-	line-height: 25px;
-	font-family: poppins-bold;
-	font-size: 23px;
-	color: #FFEC6B;
-}
-.banner-description h5 {
-	color: #fff;
-	line-height: 17px;
-	margin-top: 10px;
-	font-family: poppins;
-	font-weight: 500;
-	font-size: 15px;
-}
-.banner-description p {
-	line-height: 16px;
-	color: #fff;
-	font-weight: bold;
-	font-family: poppins;
-	font-size: 14px;
-}
 .shop-page-pagination .page-link {
 	position: relative;
 	display: block;

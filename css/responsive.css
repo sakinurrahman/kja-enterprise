@@ -20,6 +20,27 @@
         margin: 0 auto;
         border: 1.5px solid black;
     }
+
+    /* Trust badge css */
+    .trust-badge-section .trust-badge-box {
+        flex-flow: column nowrap;
+    }
+
+    .trust-badge-section .trust-badge-box {
+        position: relative;
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .trust-badge-inner img {
+        margin-bottom: 6px;
+    }
+
+    /* .reviews-logo {
+        margin-bottom: 6px;
+    } */
 }
 
 
@@ -30,8 +51,12 @@
         font-size: 20px;
         font-weight: bold;
     }
-
-
+/* 
+    .trustpilot-reviews .reviews-logo {
+        display: block;
+        flex: 1;
+    } */
+    
     .top-contact-us a {
         font-size: 22px;
     }
@@ -64,6 +89,14 @@
         border-radius: 10px;
     }
 
+    .navbar-nav .nav-item:hover {
+        background: transparent;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: red !important;
+    }
+     
     .mega-aria {
         width: 294px;
         z-index: 999;
@@ -202,6 +235,17 @@
         z-index: 9999999;
     }
 
+    .reviews-inner {
+        max-width: 298px;
+        margin: 0 auto;
+    }
+    .reviews-section .reviews-stars {
+        margin-left: 0px;
+    }
+    .reviews-message {
+        margin: 5px 0 5px 0;
+    }
+
 }
 
 @media (max-width:992px){
@@ -291,15 +335,39 @@
         width: 100%;
     }
 
-    .banner-section {
-        background: #FE5937;
-        padding: 35px 20px 35px 20px;
-        text-align: center;
+    /* Trust Badge css */
+    .trust-badge-section .container {
+        width: auto;
     }
-    .banner-description p {
-        margin-bottom: 24px !important;
-        margin-top: 15px !important;
+    .trust-badge-section .trust-badge-box {
+        margin-bottom: 30px;
     }
+
+    .trust-badge-section .trust-badge-box:nth-child(4), .trust-badge-section .trust-badge-box:nth-child(5), .trust-badge-section .trust-badge-box:nth-child(6) {
+        margin-bottom: 0px;
+    } 
+
+    .trust-badge-section .trust-badge-box:nth-child(3)::after{
+        display: none;
+    }
+
+    .trust-badge-section .trust-badge-box::before {
+        content: '';
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        bottom: -15px;
+        left: 0;
+        background-image: linear-gradient(to right,#d31144 33%,rgba(255,255,255,0) 0%);
+        background-position: bottom;
+        background-size: 6px 2px;
+        background-repeat: repeat-x;
+        border-radius: 0;
+    }
+
+    .trust-badge-section .trust-badge-box:nth-child(4)::before, .trust-badge-section .trust-badge-box:nth-child(5)::before, .trust-badge-section .trust-badge-box:nth-child(6)::before {
+        display: none;
+    } 
 
 }
 

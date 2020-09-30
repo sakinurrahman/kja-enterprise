@@ -198,13 +198,16 @@ label {
 	white-space: nowrap;
 }
 
+.bg-light-gray {
+	background-color: #ECEAEA;
+}
+
 
 /* Top logo css */
 .top-logo {
 	margin: 0 auto;
-	margin-top: 10px;
+	padding-top: 10px;
 }
-
 .top-logo img {
 	max-width: 120px;
 }
@@ -214,28 +217,24 @@ label {
 	min-width: 261px;
 }
 .search-box input[type="search"] {
-	background: transparent;
-	border: 1.5px solid gray;
-	padding: 6px 12px;
+	background: #fff;
+	border: 1.8px solid transparent;
+	padding: 10px 10px;
 	color: grey;
-	border-radius: 6px 0px 0px 6px;
-	font-weight: normal;
-	-webkit-border-radius: 6px 0px 0px 6px;
-	-moz-border-radius: 6px 0px 0px 6px;
-	-ms-border-radius: 6px 0px 0px 6px;
-	-o-border-radius: 6px 0px 0px 6px;
+	font-weight: 300;
+	width: 80%;
+	position: relative;
+}
+
+.search-box input[type="search"]:focus {
+	border: 1.8px solid red;
 }
 .search-box button {
-	border: 1.5px solid gray;
-	padding: 6px 11px 6px 11px;
-	background: #878887;
+	border: 1.7px solid red;
+	padding: 10px 11px 10px 16px;
+	background: red;
 	color: #fff;
-	border-radius: 0px 6px 6px 0px;
 	margin-left: -6px;
-	-webkit-border-radius: 0px 6px 6px 0px;
-	-moz-border-radius: 0px 6px 6px 0px;
-	-ms-border-radius: 0px 6px 6px 0px;
-	-o-border-radius: 0px 6px 6px 0px;
 }
 .search-box ::placeholder {
 	color: #8f8f8f;
@@ -243,10 +242,11 @@ label {
 	font-family: poppins;
 }
 .text-logo a {
-	font-size: 30px;
+	font-size: 23px;
 	text-transform: capitalize;
 	color: black;
 	font-family: Nayala;
+	letter-spacing: -1px;
 }
 .top-contact-us a {
 	font-size: 25px;
@@ -263,6 +263,9 @@ label {
 
 
 /* Mega menu */
+.nav-section {
+	background-color: #312F30;
+}
 .mega-menu {
 	width: 100%;
 	max-width: 100%;
@@ -283,7 +286,7 @@ label {
 	display: none !important;
 }
 .navbar-light .navbar-nav .nav-link {
-	color: #000 !important;
+	color: #fff !important;
 	padding-top: 0;
 	padding-bottom: 0;
 	font-size: 31px;
@@ -295,7 +298,7 @@ label {
 .nav-icon {
 	font-size: 17px;
 	margin-left: -4px;
-	color: gray;
+	color: #fff;
   }
   .show .nav-icon {
 	color: orange;
@@ -467,9 +470,10 @@ label {
 	max-width: 135px;
 	margin-top: 28px;
 }
-  .content-img img {
+.content-img img {
 	max-width: 150px;
-  }
+	max-height: 140px;
+}
   .content-box-title h5 {
 	font-size: 26px;
 	font-weight: 600;
@@ -648,13 +652,15 @@ label {
 
 /* Footer css */
 .footer-section {
-	background: #dfdfdf;
+	background: #312F30;
 	padding-top: 30px;
+	color: #fff !important;
 }
 
 .social-icon ul li {
 	display: inline-block;
 	margin-right: 10px;
+	color: #fff;
   }
   .social-icon ul li a img {
 	max-width: 40px;
@@ -673,6 +679,7 @@ label {
 	font-size: 17px;
 	font-family: poppins;
 	line-height: 25px;
+	color: #fff;
 }
 .social-icon h3 {
 	border-left: 6px solid orange;
@@ -680,6 +687,7 @@ label {
 	margin-bottom: 8px;
 	font-size: 42px;
 	font-weight: 900;
+	color: #fff;
 }
 
 .footer-menu h4 {
@@ -688,6 +696,7 @@ label {
 	font-size: 35px;
 	font-family: Nayala;
 	font-weight: 700;
+	color: #fff;
 }
 .footer-menu ul li a {
 	font-size: 18px;
@@ -695,9 +704,15 @@ label {
 	text-transform: capitalize;
 	font-weight: 599;
 	font-family: Poppins;
+	color: #fff;
+	transition: .3s all ease-in-out;
+	-webkit-transition: .3s all ease-in-out;
+	-moz-transition: .3s all ease-in-out;
+	-ms-transition: .3s all ease-in-out;
+	-o-transition: .3s all ease-in-out;
 }
   .footer-menu ul li a:hover {
-	color: orange;
+	color: red;
 	text-decoration: underline;
   }
 
@@ -711,25 +726,29 @@ label {
 	font-size: 34px;
 	font-family: Nayala;
 	font-weight: 700;
+	color: #fff;
 }
 
 .footer-contact p {
 	font-size: 17px;
 	font-family: poppins;
+	color: #fff;
 }
 
 .footer-contact a {
 	font-family: poppins;
 	font-weight: 600;
+	color: #fff;
 }
 .copyright {
-	background: #dfdfdf;
+	background: #6C6A6A;
 	padding: 10px 0;
 	border-top: 1.6px solid gray;
   }
   .copyright p {
 	font-size: 18px;
 	font-family: Poppins;
+	color: #fff;
   }
 
 

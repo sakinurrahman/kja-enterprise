@@ -25,25 +25,32 @@
 
 /* Normal desktop :992px. */
 @media (max-width: 992px) {
+
     .text-logo a {
         font-size: 20px;
         font-weight: bold;
     }
 
-    .search-box input[type="search"] {
-        width: 170px;
-    }
+
     .top-contact-us a {
         font-size: 22px;
     }
     .top-contact-us span {
         font-size: 15px;
     }
+
+    .nav-section {
+        background-color: initial;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: #000 !important;
+    }
     .navbar {
         border: none;
         padding: 0px !important;
         width: 330px;
         margin: 0 auto;
+        margin-top: 15px;
     }
 
     .navbar-collapse {
